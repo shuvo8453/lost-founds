@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="app">
-            <home-component></home-component>
+            <login-component></login-component>
         </div>
         @vite('resources/js/app.js')
     </body>
