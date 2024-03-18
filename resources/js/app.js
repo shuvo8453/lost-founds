@@ -1,16 +1,13 @@
 import './bootstrap';
 
-import { createApp } from 'vue/dist/vue.esm-bundler.js';
-
-import Home from './Home.vue';
-import Login from './auth/Login.vue';
+import { createApp } from 'vue';
+import { routers } from './routers'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 
-const app = createApp({});
+import App from './App.vue';
 
-app.component('home-component', Home);
-app.component('login-component', Login);
-
+const app = createApp(App);
+app.use(routers)
 app.mount("#app");
