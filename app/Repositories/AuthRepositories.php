@@ -12,4 +12,14 @@ class AuthRepositories
     {
         $this->user = $user;
     }
+
+    public function findByUserName($username)
+    {
+        return $this->user->where('username', $username)->first();
+    }
+
+    public function createUser($userData)
+    {
+        return $this->user->create($userData);
+    }
 }

@@ -22,7 +22,11 @@ class AuthRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users|max:255',
+            'phone_number' => 'required|string|max:255',
+            'id_number' => 'required|unique:users,column,except,id'
         ];
     }
 }
