@@ -13,7 +13,7 @@ return [
             'name' => null,
         ],
         [
-            'url' => '/registation',
+            'url' => '/registration',
             'name' => null,
         ],
         [
