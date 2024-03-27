@@ -60,14 +60,15 @@
 
                             <!-- Password input -->
                             <div class="form-outline mb-3">
-                                <input
-                                    type="password"
-                                    id="form3Example4"
-                                    class="form-control form-control-lg"
-                                    placeholder="Enter password"
-                                />
-                                <label class="form-label" for="form3Example4"
-                                    >Password</label
+                                <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" />
+                                <label class="form-label" for="form3Example4">Password</label
+                                >
+                            </div>
+
+                            <!-- Confirm Password input -->
+                            <div class="form-outline mb-3">
+                                <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter confirm password" />
+                                <label class="form-label" for="form3Example4">Confirm Password</label
                                 >
                             </div>
 
@@ -101,11 +102,11 @@
                                         padding-right: 2.5rem;
                                     "
                                 >
-                                    Login
+                                    Registraion
                                 </button>
                                 <p class="small fw-bold mt-2 pt-1 mb-0">
-                                    Don't have an account?
-                                    <a href="#!" class="link-danger">Register</a>
+                                    Back to
+                                    <router-link to="/">Login</router-link>
                                 </p>
                             </div>
                         </form>
